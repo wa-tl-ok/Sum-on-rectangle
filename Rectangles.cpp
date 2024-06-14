@@ -1,7 +1,22 @@
 #include <iostream>
-#include <vector>
 #include <algorithm>
+#include <cmath>
+#include <vector>
+#include <queue>
+#include <deque>
+#include <array>
+#include <list>
+#include <stack>
+#include <set>
+#include <unordered_set>
+#include <map>
+#include <unordered_map>
 #include <string>
+#include <cstring>
+#include <random>
+#include <bitset>
+#include <functional>
+#include <random>
 
 int toX(int n) {
     int x = 1;
