@@ -189,7 +189,7 @@ private:
 int main() {
     int n, m, q; cin >> n >> m >> q;
 
-    SegmentTree2D DO(n, m);
+    SegmentTree2D ST(n, m);
 
     int x1, y1, x2, y2, Dop;
     for (int i = 0; i < q; ++i) {
@@ -200,7 +200,7 @@ int main() {
                 cout << "WRONG QUERY" << "\n";
             }
             else {
-                DO.upd(x1, x2, y1, y2, Dop);
+                ST.upd(x1, x2, y1, y2, Dop);
             }
         }
         else if (s == "?") {
@@ -209,7 +209,7 @@ int main() {
                 cout << "WRONG QUERY" << "\n";
             }
             else {
-                int ans = DO.ask(x1, x2, y1, y2);
+                int ans = ST.ask(x1, x2, y1, y2);
                 cout << ans << "\n";
             }
         }
