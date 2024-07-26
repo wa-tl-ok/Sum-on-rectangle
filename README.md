@@ -1,5 +1,7 @@
 # Sum on rectangle with changes
 
+Formulation of the problem:
+
 Let us be given a rectangle of size n*m. Each cell contains a number (initially all numbers are equal to zero)
 Let's learn how to do the following operations:
 
@@ -7,7 +9,7 @@ Let's learn how to do the following operations:
 
 ? x1 y1 x2 y2 - find the sum of numbers under a rectangle with corners at points A(x1, y1) and B(x2, y2).
 
-Quick search for the sum of numbers under a rectangle with changes using 2D Segment Tree
+## Quick search for the sum of numbers under a rectangle with changes using 2D Segment Tree
 
 Please note that push notifications cannot be used directly. Compared to a one-dimensional Segment Tree, it is impossible to push and stack segments.
 
