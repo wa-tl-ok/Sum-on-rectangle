@@ -1,5 +1,5 @@
 # Sum on rectangle
-quick search for the sum of numbers under a rectangle with changes using 2D Segment Tree
+Quick search for the sum of numbers under a rectangle with changes using 2D Segment Tree
 
 Let us be given a rectangle of size n*m. Each cell contains a number (initially all numbers are equal to zero)
 Let's learn how to do the following operations:
