@@ -42,6 +42,7 @@ public:
 
         return k;
     }
+
     void upd_sum(int y1, int y2, int value) {
         upd_sum(0, sum.size() / 2 - 1, y1, y2, 1, value);
     }
@@ -144,6 +145,7 @@ public:
             upd(med + 1, r, x1, x2, y1, y2, 2 * v + 1, X);
         }
     }
+
     int ask(int l, int r, int x1, int x2, int y1, int y2, int v) {
         if (x1 > r || x2 < l) {
             return 0;
@@ -158,6 +160,7 @@ public:
                 TREE_[v].ask_add(y1, y2) * max(0, (min(r, x2) - max(l, x1) + 1));
         }
     }
+
     seg_tree& operator[](int index) {
         return TREE_[index];
     }
