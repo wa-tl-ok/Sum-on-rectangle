@@ -19,7 +19,7 @@
 
 using namespace std;
 
-class SegmentTree2D {
+class seg_tree {
 public:
     void build(int size) {
         sum.assign(2 * size, 0);
@@ -123,7 +123,7 @@ public:
 
         TREE_.resize(2 * n_);
         for (int i = 0; i < 2 * n_; ++i) {
-            SegmentTree2D node;
+            seg_tree node;
             node.build(m_);
             TREE_[i] = node;
         }
@@ -138,7 +138,7 @@ public:
     }
 private:
     int n_, m_;
-    vector <SegmentTree2D> TREE_;
+    vector <seg_tree> TREE_;
 
     int toX(int n) {
         int x = 1;
@@ -181,7 +181,7 @@ private:
         }
     }
 
-    SegmentTree2D& operator[](int index) {
+    seg_tree& operator[](int index) {
         return TREE_[index];
     }
 };
