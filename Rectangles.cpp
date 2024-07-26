@@ -136,10 +136,6 @@ public:
     int ask(int x1, int x2, int y1, int y2) {
         return ask(0, n_ - 1, x1, x2, y1, y2, 1);
     }
-
-    seg_tree& operator[](int index) {
-        return TREE_[index];
-    }
 private:
     int n_, m_;
     vector <seg_tree> TREE_;
@@ -183,6 +179,10 @@ private:
                 ask(med + 1, r, x1, x2, y1, y2, 2 * v + 1) +
                 TREE_[v].ask_add(y1, y2) * max(0, (min(r, x2) - max(l, x1) + 1));
         }
+    }
+
+    seg_tree& operator[](int index) {
+        return TREE_[index];
     }
 };
 
