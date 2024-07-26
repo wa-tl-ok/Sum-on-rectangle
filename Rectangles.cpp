@@ -18,15 +18,6 @@
 #include <functional>
 #include <random>
 
-int toX(int n) {
-    int x = 1;
-    while (x * 2 < n) {
-        x *= 2;
-    }
-    x *= 2;
-    return x;
-}
-
 using namespace std;
 
 class seg_tree {
