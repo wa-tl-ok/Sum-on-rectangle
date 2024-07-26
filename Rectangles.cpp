@@ -177,10 +177,6 @@ private:
 
 int main() {
     int n, m, q; cin >> n >> m >> q;
-    int predn = n; int predm = m;
-
-    n = toX(n);
-    m = toX(m);
 
     SEG_TREE DO(n, m);
 
